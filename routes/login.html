@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Login to Pity Card</title>
+		<style type="text/css">
+		html, body {
+            height: 100%;
+            margin: 0;
+        }
+		a { color: #fff; }
+
+        #wrapper {
+            min-height: 100%; 
+        }
+		.login-form {
+			width: 300px;
+		    margin: 0px auto;
+			margin-top: 50px;
+			font-family: Tahoma, Geneva, sans-serif;
+		}
+		.login-form h1 {
+			text-align: center;
+			color: #000000;
+			font-size: 24px;
+			padding: 20px 0 20px 0;
+		}
+		.login-form input[type="password"],
+		.login-form input[type="text"] {
+			width: 100%;
+			padding: 15px;
+			border: 1px solid #dddddd;
+			margin-bottom: 15px;
+			box-sizing:border-box;
+		}
+		.login-form input[type="submit"] {
+			width: 100%;
+			padding: 15px;
+			background-color: #535b63;
+			border: 0;
+			box-sizing: border-box;
+			cursor: pointer;
+			font-weight: bold;
+			color: #ffffff;
+		}
+		.login-form input[type="logo"] {
+			align-items: center;
+			width: 100%;
+			padding: 15px;
+			background-color: #535b63;
+			border: 0;
+			box-sizing: border-box;
+			cursor: pointer;
+			font-weight: bold;
+			color: #ffffff;
+		}
+		.login-footer{
+			text-align: center;
+			color: #FFFFFF;
+			font-size: 24px;
+			padding: 20px 0 20px 0;
+		}
+		.info-links{
+			text-align: center;
+			color: #FFFFFF;
+			font-size: 24px;
+			padding: 20px 20px 20px 20px;
+		}
+		
+		.gradient {
+			background: #fefcea; /* Для старых браузров */
+			background: linear-gradient(to top, #013440, #03a66a);
+			width: 100%;
+			height: 100%;
+  		}
+		</style>
+	</head>
+	<body class="gradient">
+
+			<div class="login-form">
+			<img type="logo"  id="poster" src="/images/logo.png" width=100%>
+			</div>
+								
+		<div class="login-form">
+			<h1>Pity Card</h1>
+			<form action="auth" method="POST">
+				<input type="text" name="username" placeholder="Username" required>
+				<input type="password" name="password" placeholder="Password" required>
+				<input type="submit">
+			</form>
+		</div>
+		<div class="login-footer">
+				<form action="forgotPassword" method="POST">
+				<a href="",>Forgot your password?</a>
+			</form>
+				<div class="info-links">
+					
+					<a href="">Register</a>
+				</div>
+
+			</div>
+	</body>
+</html>
